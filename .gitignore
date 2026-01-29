@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Neovim
+nvim/lazy-lock.json
+nvim/.luarc.json
+nvim/.neoconf.json
+
+# Fish
+fish/fish_variables
+fish/.DS_Store
+
+# Backup files
+*.backup
+*.bak
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
