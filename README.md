@@ -9,6 +9,7 @@ My personal development environment configuration files for macOS.
   - markdown-preview.nvim
 - **Fish Shell** - Modern shell with custom functions
   - yazi cd-on-quit integration
+- **Zellij** - Terminal multiplexer configuration
 - **Ghostty** - Terminal emulator configuration
 - **Yazi** - Terminal file manager
 
@@ -27,7 +28,7 @@ cd ~/dotfiles
 
 That's it! The script will:
 - Install Homebrew (if not installed)
-- Install essential packages (neovim, fish, yazi, fzf, etc.)
+- Install essential packages (neovim, fish, yazi, zellij, fzf, etc.)
 - Create symlinks to configuration files
 - Set Fish as your default shell
 - Install Fisher (Fish plugin manager)
@@ -55,6 +56,11 @@ ln -sf ~/dotfiles/nvim ~/.config/nvim
 ### Fish
 ```bash
 ln -sf ~/dotfiles/fish ~/.config/fish
+```
+
+### Zellij
+```bash
+ln -sf ~/dotfiles/zellij ~/.config/zellij
 ```
 
 ### Ghostty
@@ -86,6 +92,14 @@ ln -sf ~/dotfiles/ghostty/config ~/.config/ghostty/config
 **Custom Functions:**
 - `yy` - Open yazi and cd to selected directory on quit
 
+### Zellij (Terminal Multiplexer)
+
+- `Ctrl + p` - Pane mode
+- `Ctrl + t` - Tab mode
+- `Ctrl + n` - Resize mode
+- `Ctrl + s` - Scroll mode
+- `Ctrl + o` - Session mode
+
 ### Terminal (Ghostty)
 
 - `Cmd + T` - New tab
@@ -104,6 +118,8 @@ dotfiles/
 │           └── markdown-preview.lua
 ├── fish/              # Fish shell configuration
 │   └── config.fish
+├── zellij/            # Zellij terminal multiplexer configuration
+│   └── config.kdl
 ├── ghostty/           # Ghostty terminal configuration
 │   └── config
 ├── install.sh         # Automated setup script
@@ -138,6 +154,7 @@ Feel free to customize these dotfiles to your liking:
 
 - **Neovim plugins**: Edit files in `nvim/lua/plugins/`
 - **Fish functions**: Add functions to `fish/config.fish`
+- **Zellij settings**: Edit `zellij/config.kdl`
 - **Ghostty settings**: Edit `ghostty/config`
 
 ## 📚 Documentation
@@ -171,6 +188,7 @@ cd ~/dotfiles
 - [AstroNvim Documentation](https://docs.astronvim.com/)
 - [Fish Shell Documentation](https://fishshell.com/docs/current/)
 - [Neovim Documentation](https://neovim.io/doc/)
+- [Zellij Documentation](https://zellij.dev/documentation/)
 - [Yazi Documentation](https://yazi-rs.github.io/)
 
 ## 🔒 License & Privacy
@@ -185,6 +203,7 @@ All tools included in this configuration are open-source and **safe for commerci
 | **Fish Shell** | GPL v2 | ✅ Yes | Free to use commercially |
 | **Ghostty** | MIT | ✅ Yes | Very permissive license |
 | **AstroNvim** | GPL v3 | ✅ Yes | Free to use commercially |
+| **Zellij** | MIT | ✅ Yes | Very permissive license |
 | **Yazi** | MIT | ✅ Yes | Very permissive license |
 
 **For Business/Enterprise Use:**
@@ -205,6 +224,7 @@ The GPL licenses (Fish, AstroNvim) only have requirements if you **distribute mo
 | **Fish Shell** | ❌ None | Fully offline |
 | **Ghostty** | ❌ None | Privacy-first design, completely offline |
 | **AstroNvim** | ❌ None | Only connects to download plugins |
+| **Zellij** | ❌ None | Fully offline |
 | **Yazi** | ❌ None | Fully offline |
 
 **Network Communication:**
