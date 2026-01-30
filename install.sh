@@ -59,6 +59,7 @@ packages=(
     "neovim"
     "fish"
     "yazi"
+    "zellij"
     "fzf"
     "git"
     "node"
@@ -92,6 +93,10 @@ create_symlink "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 # Setup Fish
 print_info "Setting up Fish shell..."
 create_symlink "$DOTFILES_DIR/fish" "$HOME/.config/fish"
+
+# Setup Zellij
+print_info "Setting up Zellij..."
+create_symlink "$DOTFILES_DIR/zellij" "$HOME/.config/zellij"
 
 # Setup Ghostty
 print_info "Setting up Ghostty..."
